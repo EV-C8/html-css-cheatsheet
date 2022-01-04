@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="resources/style.css" type="text/css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <title>HTML & CSS Cheatsheet</title>
+</head>
+
+<body>
+    <div class="html">
+        <div class="h1-top-div">
+            <h1>HTML & CSS</h1>
+        
+            <p><span class="top-p">This is some basic HTML and CSS.</span></p>
+        </div>
+        
+
+        <h2>HTML Cheats</h2>
+
+        <div class="h3p-html">
+
+        <h3>The &ltdiv&gt</h3>
+        <p>
+            The <strong>&ltdiv&gt</strong> HTML element is the generic container for flow content. It
+            has no effect on the content or layout until styled in some way using
+            CSS (e.g. styling is directly applied to it, or some kind of layout
+            model like Flexbox is applied to its parent element).
+        </p>
+
+        <h3>The &ltsection&gt</h3>
+        <p>
+            The <strong>&ltsection&gt</strong> HTML element represents a generic standalone section
+            of a document, which doesn't have a more specific semantic element to
+            represent it. Sections should always have a heading, with very few
+            exceptions.
+        </p>
+        <div class="list">
+            <ul>
+                <li>&lth1&gtChoosing an Apple&lth1/&gt</li> <br>
+                <li>&ltsection&gt</li>
+                 <ul>           
+                    <li>&lth2&gtIntroduction&lt/h2&gt</li>
+                    <li>&ltp&gtThis document provides a guide to help with the important task of
+                choosing the correct Apple. <br> &lt/p&gt</li>
+                </ul>
+                <li>&lt/section&gt</li>
+                <br>
+                <li>&ltsection&gt</li>
+                    <ul>
+                        <li>&lth2&gtCriteria&lt/h2&gt </li>
+                        <li>&ltp&gt There are many different criteria to be considered when choosing
+                an Apple — size, color, firmness, sweetness, tartness... <br> &lt/p&gt</li>
+                    </ul>    
+                <li>&lt/section&gt</li>
+            </ul>
+            
+        </div>
+        
+
+        <h3>The &ltarticle&gt</h3>
+        <p>
+            The <strong>&ltarticle&gt</strong> HTML element represents a self-contained composition
+            in a document, page, application, or site, which is intended to be
+            independently distributable or reusable (e.g., in syndication). Examples
+            include: a forum post, a magazine or newspaper article, or a blog entry,
+            a product card, a user-submitted comment, an interactive widget or
+            gadget, or any other independent item of content.
+        </p>
+        <h3>The &lttable&gt</h3>
+        <p>
+            The <strong>&lttable&gt</strong> HTML element represents tabular data — that is,
+            information presented in a two-dimensional table comprised of rows and
+            columns of cells containing data.
+        </p>
+        <div class="list">
+        <ul>
+        <li>&lttable&gt</li> 
+            <ul>
+                <li>&ltthead&gt</li>
+            </ul>
+                <ul>
+                    <ul>
+                <li>&lttr&gt</li> 
+                <li>&ltth colspan="2"&gtThe table header&lt/th&gt</li>
+                <li>&lt/tr&gt</li></ul>
+                <li>&lt/thead&gt</li>
+                </ul>
+            
+        
+        <ul> 
+            <li>&lttbody&gt</li>
+                <ul>
+                <li>&lttr&gt </li>
+                    <li>&lttd&gtThe table body&lt/td&gt</li>
+                    <li>&lttd&gtwith two columns&lt/td&gt</li> 
+                    <li>&lt/tr&gt</li>
+            </ul> 
+            <li>&lt/tbody&gt</li> 
+            
+        </ul>
+        <li>&lt/table&gt</li>
+        </ul>
+    </div>
+
+        
+        <div class="table">
+            <tr>
+            <th scope="row"><strong> Permitted content</th>
+            <td>In this order:<td></strong>
+                <ol>
+                    <li>An optional &lt;caption&gt; element,</li>
+                    <li>Zero or more &lt;colgroup&gt; elements,</li>
+                    <li>An optional &lt;thead&gt; element,</li>
+                    <li>Either one of the following:</li>
+                        <ul>
+                            <li>zero or more &lt;tbody&gt; elements</li>
+                            <li>one or more &lt;tr&gt; elements</li>
+                        </ul>
+                    </li>
+                    <li>An optional &lt;tfoot&gt; element</li>
+                </ol>
+            </td>
+            </tr>
+        </div>
+        </div>
+
+    <div class="css">
+        <h2>CSS Cheats</h2>
+
+        <div class="h3p-css">
+        <h3>Linking style sheet</h3>
+        <p>To link styles.css to index.html add the following line somewhere
+            inside the <span class="classid">&lthead&gt</span> of the HTML document. <br>
+        <br>
+        <span class="classid">&ltlink rel="stylesheet" href="styles.css"&gt</span> <br>
+        <br>
+        This <span class="classid">&ltlink&gt</span> element tells the browser that we have a stylesheet, using the rel
+        attribute, and the location of that stylesheet as the value of the href attribute.
+        You can test that the CSS works by adding a rule to styles.css.</p>
+
+        <h3>Class and ID Selectors</h3>
+        <p>CSS classes can be reusable and applied to many elements.
+            Class selectors are denoted with a period <span class="classid">.</span> followed by the class name.
+            CSS ID selectors should be unique and used to style only a single element.
+            ID selectors are denoted with a hash sign <span class="classid">#</span> followed by the id name.</p>
+        <aside><em> /* Selects all elements with class="column" */ </em><br>
+            <span class="aside-css">.column { }</span>
+            <br>
+            <br>
+            <em>/* Selects element with id="first-item" */ </em><br>
+            <span class="aside-css"> #first-item {}</span></aside>
+
+        <h3>Groups of CSS Selectors</h3>
+        <p>Match multiple selectors to the same CSS rule, using a comma-separated list. In this example, the text for
+            both <span class="classid">h1</span> and <span class="classid">h2</span> is set to red.</p>
+
+        <aside>h1, h2 {
+            color: red;
+            }</aside>
+
+        <h3>Selector Chaining</h3>
+        <p>CSS selectors define the set of elements to which a CSS rule set applies.
+            For instance, to select all <span class="classid">&ltp&gt</span> elements,
+            the <span class="classid">p</span> selector
+            can be used to create style rules.</p>
+
+        <h3>Chaining Selectors</h3>
+        <p>CSS selectors can be chained so that rule sets apply only
+            to elements that match all criteria. For instance, to select <span class="classid">&lth3&gt</span>
+            elements that also have
+            the <span class="classid">section-heading</span> class, the selector <span class="classid">h3.section-heading</span>  can be used.</p>
+
+        <aside><em> /* Select h3 elements with the section-heading class */ </em><br>
+            <span class="aside-css"> h3.section-heading {
+            color: blue;
+            }</span>
+            <br>
+            <br>
+            <em> /* Select elements with the section-heading and button class */ </em><br>
+            <span class="aside-css">.section-heading.button {
+            cursor: pointer;
+            }</span></aside>
+
+        </div>
+        
+    </div>
+    <footer>Created by Enrique Chavez.</footer>
+
+</body>
+
+</html>
